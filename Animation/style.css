@@ -1,0 +1,37 @@
+img{
+    max-width: 300px;
+    height: auto;
+    border: 5px solid black;
+    display: block;
+    margin: 0 auto;
+    margin-top:100px ;
+    border-radius: 50%;
+
+    position: relative;
+    animation-name: img-anim;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* animation-fill-mode: forwards; */
+
+}
+
+
+@keyframes img-anim {
+    0%{
+        border-color: orange;
+        top: 0;
+        left: 0;
+    }
+    50%{
+        border-color: green;
+        top: 100px;
+        left: 0;
+        opacity: 0.5;
+    }
+    100%{
+        border-color: red;
+        top: 0;
+        left: 0;
+    }
+}
